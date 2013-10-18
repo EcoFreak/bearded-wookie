@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" name="Default" comment="[SYNC] Some changes made to UserDAO:&#10; - Implemented second hash for password with salt&#10; - Authentication&#10; - User Criation&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Henrique.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/DAOFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/Group.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/GroupDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/IntegerKey.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/Key.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UniqueDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Main.java" afterPath="$PROJECT_DIR$/src/test/java/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bearded-Wookie.iws" />
@@ -19,17 +24,23 @@
     <file path="/a.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382094749973" ignored="false" />
     <file path="/sample.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382049712544" ignored="false" />
     <file path="/File Header.txt.ft" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381860639027" ignored="false" />
-    <file path="/fragment.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381941484296" ignored="false" />
-    <file path="/User.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382003891529" ignored="false" />
+    <file path="/fragment.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382118235019" ignored="false" />
+    <file path="/User.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382107424553" ignored="false" />
     <file path="/IDao.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381941457279" ignored="false" />
-    <file path="/UserDAO.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382096962560" ignored="false" />
+    <file path="/UserDAO.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382118459861" ignored="false" />
     <file path="/Implemented Method Body.txt.ft" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381872581058" ignored="false" />
-    <file path="/Main.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382052653602" ignored="false" />
+    <file path="/Main.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382119719886" ignored="false" />
     <file path="/dummy.sql" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381933315254" ignored="false" />
     <file path="/a.sql" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381933315254" ignored="false" />
     <file path="/DataSourceManager.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381941723784" ignored="false" />
-    <file path="/AbstractDao.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381946141454" ignored="false" />
-    <file path="/Dummy.txt" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382094817849" ignored="false" />
+    <file path="/AbstractDao.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382118478794" ignored="false" />
+    <file path="/Dummy.txt" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382116508511" ignored="false" />
+    <file path="/Group.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382107392084" ignored="false" />
+    <file path="/UniqueDAO.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382115153580" ignored="false" />
+    <file path="/Key.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382113072209" ignored="false" />
+    <file path="/IntegerKey.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382113205884" ignored="false" />
+    <file path="/GroupDAO.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382115111345" ignored="false" />
+    <file path="/DAOFactory.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382117970845" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,28 +107,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+      <file leaf-file-name="AbstractEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/AbstractEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="15" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.8203991">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.33333334">
+            <state line="17" column="34" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1382094836393" expanded="true" signature="754:864" placeholder="INSERT INTO ..." />
-                <marker date="1382094836393" expanded="true" signature="754:770" placeholder="INSERT INTO ..." />
-                <marker date="1382094836393" expanded="true" signature="1089:1153" placeholder="SELECT id_us..user..." />
-                <marker date="1382094836393" expanded="true" signature="1685:1785" placeholder="SELECT id_us..user..." />
-                <marker date="1382094836393" expanded="true" signature="2514:2562" placeholder="UPDATE user ..." />
-                <marker date="1382094836393" expanded="true" signature="2617:2657" placeholder="SELECT token..user..." />
+                <marker date="1382118463157" expanded="true" signature="900:1010" placeholder="INSERT INTO ..." />
+                <marker date="1382118463157" expanded="true" signature="1235:1299" placeholder="SELECT id_us..user..." />
+                <marker date="1382118463157" expanded="true" signature="1824:1924" placeholder="SELECT id_us..user..." />
+                <marker date="1382118463157" expanded="true" signature="2653:2701" placeholder="UPDATE user ..." />
+                <marker date="1382118463157" expanded="true" signature="2756:2796" placeholder="SELECT token..user..." />
+                <marker date="1382118463157" expanded="true" signature="3024:3136" placeholder="SELECT id_us..user..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/DAOFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="64" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UniqueDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UniqueDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#477#485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/GroupDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="17" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Key.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/Key.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegerKey.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/IntegerKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="25" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bearded-Wookie.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bearded-Wookie.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/Group.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="36" selection-start="556" selection-end="581" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +218,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -140,14 +226,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/AbstractEntity.java" />
         <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/IDao.java" />
-        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java" />
-        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java" />
         <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/DataSourceManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/Group.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/Key.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/Key.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/IntegerKey.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UniqueDAO.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/base/UniqueDAO.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/base/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/GroupDAO.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/base/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/DAOFactory.java" />
         <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Main.java" />
       </list>
     </option>
   </component>
@@ -258,7 +352,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -273,7 +367,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bearded-wookie" />
+              <option name="myItemId" value="Bearded-Wookie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,7 +396,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bearded-wookie" />
+              <option name="myItemId" value="Bearded-Wookie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,7 +418,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bearded-wookie" />
+              <option name="myItemId" value="Bearded-Wookie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -335,6 +429,10 @@
               <option name="myItemId" value="bearded" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -342,7 +440,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bearded-wookie" />
+              <option name="myItemId" value="Bearded-Wookie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,7 +462,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bearded-wookie" />
+              <option name="myItemId" value="Bearded-Wookie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -380,9 +478,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bearded-Wookie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bearded-Wookie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bearded" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,12 +523,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -449,6 +573,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -475,19 +612,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -571,33 +695,53 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22453372" sideWeight="0.67489713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22453372" sideWeight="0.63374484" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3985932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3985932" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24175036" sideWeight="0.19615912" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3251029" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31687242" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6831276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.67489713" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36576787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.6831276" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36625513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.60082304" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -671,71 +815,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/DataSourceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="52" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1382094836393" expanded="true" signature="754:864" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="754:770" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="1089:1153" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="1685:1785" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="2514:2562" placeholder="UPDATE user ..." />
-            <marker date="1382094836393" expanded="true" signature="2617:2657" placeholder="SELECT token..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1382094836393" expanded="true" signature="754:864" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="754:770" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="1089:1153" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="1685:1785" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="2514:2562" placeholder="UPDATE user ..." />
-            <marker date="1382094836393" expanded="true" signature="2617:2657" placeholder="SELECT token..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="35" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -744,34 +823,15 @@
     <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="38" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="43" selection-start="383" selection-end="383" vertical-scroll-proportion="0.28883496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/AbstractEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="264" selection-end="264" vertical-scroll-proportion="0.030965392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.3715847">
           <folding />
         </state>
       </provider>
@@ -783,25 +843,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="15" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+        <state line="19" column="5" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="36" selection-start="556" selection-end="581" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/entities/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/core/keys/IntegerKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/GroupDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bearded-Wookie.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="64" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UniqueDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#477#485#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.33333334">
+        <state line="17" column="34" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1382094836393" expanded="true" signature="754:864" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="754:770" placeholder="INSERT INTO ..." />
-            <marker date="1382094836393" expanded="true" signature="1089:1153" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="1685:1785" placeholder="SELECT id_us..user..." />
-            <marker date="1382094836393" expanded="true" signature="2514:2562" placeholder="UPDATE user ..." />
-            <marker date="1382094836393" expanded="true" signature="2617:2657" placeholder="SELECT token..user..." />
+            <marker date="1382118463157" expanded="true" signature="900:1010" placeholder="INSERT INTO ..." />
+            <marker date="1382118463157" expanded="true" signature="1235:1299" placeholder="SELECT id_us..user..." />
+            <marker date="1382118463157" expanded="true" signature="1824:1924" placeholder="SELECT id_us..user..." />
+            <marker date="1382118463157" expanded="true" signature="2653:2701" placeholder="UPDATE user ..." />
+            <marker date="1382118463157" expanded="true" signature="2756:2796" placeholder="SELECT token..user..." />
+            <marker date="1382118463157" expanded="true" signature="3024:3136" placeholder="SELECT id_us..user..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pt/com/node/wookie/bearded/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="1" selection-start="502" selection-end="502" vertical-scroll-proportion="0.60310423">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.8203991">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +996,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

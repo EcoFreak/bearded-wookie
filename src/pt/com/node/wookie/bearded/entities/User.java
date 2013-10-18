@@ -9,6 +9,7 @@ public class User extends AbstractEntity
 {
     private String username, name, email, password;
     private String token;
+    private Group group;
 
     public User()
     {
@@ -79,16 +80,26 @@ public class User extends AbstractEntity
         this.token = token;
     }
 
+    public Group getGroup()
+    {
+        return group;
+    }
+
+    public void setGroup(Group group)
+    {
+        this.group = group;
+    }
+
     @Override
     public String toString()
     {
         return "User{" +
-                "id='" + id + '\'' +
                 "username='" + username + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", token='" + token + '\'' +
+                ", group=" + group +
                 '}';
     }
 }

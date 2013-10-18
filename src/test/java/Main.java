@@ -4,6 +4,7 @@
  * Time: 22:56
  */
 
+import pt.com.node.wookie.bearded.dao.DAOFactory;
 import pt.com.node.wookie.bearded.dao.UserDAO;
 import pt.com.node.wookie.bearded.entities.User;
 
@@ -11,7 +12,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        UserDAO dao = new UserDAO();
+        UserDAO dao = DAOFactory.getDAO(UserDAO.class);
         // Initialize the datasource, could /should be done of Spring
         // configuration
 
@@ -25,6 +26,7 @@ public class Main
         User u = dao.authenticate("ecofreak", pass);
 
         System.out.println(u);
+        System.out.println(dao.getUserByToken(u.getToken()));
         /*List<User> list = dao.selectAll();
         for (User myUser : list)
         {

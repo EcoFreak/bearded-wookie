@@ -4,6 +4,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import pt.com.node.wookie.bearded.core.DataSourceManager;
+import pt.com.node.wookie.bearded.core.keys.Key;
+import pt.com.node.wookie.bearded.entities.AbstractEntity;
 import pt.com.node.wookie.bearded.entities.User;
 
 import java.util.List;
@@ -15,6 +17,11 @@ import java.util.List;
  */
 public class UserDAO extends AbstractDao
 {
+    protected UserDAO()
+    {
+
+    }
+
     public void create(String username, String email, String password, String name, String security_question, String security_answer)
     {
         JdbcTemplate insert = new JdbcTemplate(dataSource);
@@ -41,7 +48,7 @@ public class UserDAO extends AbstractDao
         JdbcTemplate jdbc = new JdbcTemplate(dataSource);
         String passwordHashed = getMD5HashWithSalt(password);
         //Getitng user by username and password, if any
-        User u = null;
+        User u;
         try
         {
             u = (User) jdbc.queryForObject("SELECT id_user, username, email, password, name,token  FROM user WHERE username = ? AND password = ?",
@@ -68,5 +75,26 @@ public class UserDAO extends AbstractDao
         JdbcTemplate jdbc = new JdbcTemplate(dataSource);
         jdbc.update("UPDATE user SET token = UUID() WHERE id_user = ?", u.getId());
         u.setToken(jdbc.queryForObject("SELECT token FROM user WHERE id_user = ?", String.class, u.getId()));
+    }
+
+    public User getUserByToken(String token)
+    {
+        JdbcTemplate jdbc = new JdbcTemplate(dataSource);
+        User u;
+        try
+        {
+            u = (User) jdbc.queryForObject("SELECT id_user,name, username,email, password, name, token , fk_id_group AS 'id_group' FROM user WHERE token = ?",
+                    new Object[]{token}, new BeanPropertyRowMapper(User.class));
+        } catch (EmptyResultDataAccessException exception)
+        {            //No users with that token
+            return null;
+        }
+        return u;
+    }
+
+    @Override
+    public AbstractEntity getByKey(Key key)
+    {
+        return null;  //Do stuff here
     }
 }
