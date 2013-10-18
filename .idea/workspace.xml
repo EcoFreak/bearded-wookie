@@ -23,7 +23,7 @@
     <file path="/a.sql" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381933315254" ignored="false" />
     <file path="/DataSourceManager.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1381941723784" ignored="false" />
     <file path="/AbstractDao.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382118478794" ignored="false" />
-    <file path="/Dummy.txt" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382120101477" ignored="false" />
+    <file path="/Dummy.txt" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382120164309" ignored="false" />
     <file path="/Group.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382107392084" ignored="false" />
     <file path="/UniqueDAO.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382115153580" ignored="false" />
     <file path="/Key.java" changelist="7f42da3d-caaa-4cde-b257-ff96cf1fa5db" time="1382113072209" ignored="false" />
@@ -687,7 +687,11 @@
       <created>1382120118090</created>
       <updated>1382120118090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[SYNC] Some changes made to UserDAO:&#10; - Implemented second hash for password with salt&#10; - Authentication&#10; - User Criation&#10; - DAO Factory&#10; - Key Implementation&#10;">
+      <created>1382120167765</created>
+      <updated>1382120167765</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -733,7 +737,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.63374484" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36625513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36625513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
