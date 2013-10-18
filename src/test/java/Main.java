@@ -4,11 +4,8 @@
  * Time: 22:56
  */
 
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import pt.com.node.wookie.bearded.dao.UserDAO;
 import pt.com.node.wookie.bearded.entities.User;
-
-import java.util.List;
 
 public class Main
 {

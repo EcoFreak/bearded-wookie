@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import pt.com.node.wookie.bearded.core.DataSourceManager;
 import pt.com.node.wookie.bearded.entities.User;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -19,14 +18,15 @@ public class UserDAO extends AbstractDao
     public void create(String username, String email, String password, String name, String security_question, String security_answer)
     {
         JdbcTemplate insert = new JdbcTemplate(dataSource);
+        String passwordHashed = getMD5HashWithSalt(password);
         insert.update("INSERT INTO user (username , email ,name, password , security_question , security_answer ) VALUES(?,?,?,?,?,?)",
-                username, email, name, password, security_question, security_answer);
+                username, email, name, passwordHashed, security_question, security_answer);
     }
 
-    public List<User> selectAll()
+    public List selectAll()
     {
         JdbcTemplate select = new JdbcTemplate(dataSource);
-        return select.query("SELECT id_user, username, email, password, name, token from user", new BeanPropertyRowMapper(User.class));
+        return select.query("SELECT id_user, username, email, password, name, token FROM user", new BeanPropertyRowMapper(User.class));
     }
 
     /**
@@ -39,12 +39,13 @@ public class UserDAO extends AbstractDao
     public User authenticate(String username, String password)
     {
         JdbcTemplate jdbc = new JdbcTemplate(dataSource);
+        String passwordHashed = getMD5HashWithSalt(password);
         //Getitng user by username and password, if any
         User u = null;
         try
         {
-            u = (User) jdbc.queryForObject("Select id_user, username, email, password, name,token  from user where username = ? and password = ?",
-                    new Object[]{username, password}, new BeanPropertyRowMapper(User.class));
+            u = (User) jdbc.queryForObject("SELECT id_user, username, email, password, name,token  FROM user WHERE username = ? AND password = ?",
+                    new Object[]{username, passwordHashed}, new BeanPropertyRowMapper(User.class));
 
         } catch (EmptyResultDataAccessException exception)
         {
@@ -57,10 +58,15 @@ public class UserDAO extends AbstractDao
         return u;
     }
 
+    private String getMD5HashWithSalt(String password)
+    {
+        return org.springframework.util.DigestUtils.md5DigestAsHex((password + DataSourceManager.salt).getBytes());
+    }
+
     private void createTokenForUser(User u)
     {
         JdbcTemplate jdbc = new JdbcTemplate(dataSource);
-        jdbc.update("UPDATE user set token = UUID() where id_user = ?", u.getId());
-        u.setToken(jdbc.queryForObject("Select token from user where id_user = ?", String.class, u.getId()));
+        jdbc.update("UPDATE user SET token = UUID() WHERE id_user = ?", u.getId());
+        u.setToken(jdbc.queryForObject("SELECT token FROM user WHERE id_user = ?", String.class, u.getId()));
     }
 }
