@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public abstract class UniqueDAO<K extends Key, E extends AbstractEntity> extends AbstractDao<K, E>
 {
-    private Map<Key, E> instances = new HashMap<Key, E>();
+    private Map<Key, E> instances = new HashMap<>();
 
     protected boolean isInstanciated(K key)
     {
@@ -24,8 +24,8 @@ public abstract class UniqueDAO<K extends Key, E extends AbstractEntity> extends
     {
         if (instances.containsKey(key))
             return instances.get(key);
-        //ERRO
         return null;
+        //ERRO
     }
 
     public void createInstace(K key)

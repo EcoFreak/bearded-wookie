@@ -17,6 +17,9 @@ import java.util.List;
  */
 public class UserDAO extends AbstractDao
 {
+    public final static String authenticateSQL = "SELECT id_user, username, email, password, name,token  FROM user WHERE username = ? AND password = ?";
+    public final static String createSQL = "INSERT INTO user (username , email ,name, password , security_question , security_answer ) VALUES(?,?,?,?,?,?)";
+
     protected UserDAO()
     {
 
@@ -26,8 +29,7 @@ public class UserDAO extends AbstractDao
     {
         JdbcTemplate insert = new JdbcTemplate(dataSource);
         String passwordHashed = getMD5HashWithSalt(password);
-        insert.update("INSERT INTO user (username , email ,name, password , security_question , security_answer ) VALUES(?,?,?,?,?,?)",
-                username, email, name, passwordHashed, security_question, security_answer);
+        insert.update(createSQL, username, email, name, passwordHashed, security_question, security_answer);
     }
 
     public List selectAll()
@@ -51,7 +53,7 @@ public class UserDAO extends AbstractDao
         User u;
         try
         {
-            u = (User) jdbc.queryForObject("SELECT id_user, username, email, password, name,token  FROM user WHERE username = ? AND password = ?",
+            u = (User) jdbc.queryForObject(authenticateSQL,
                     new Object[]{username, passwordHashed}, new BeanPropertyRowMapper(User.class));
 
         } catch (EmptyResultDataAccessException exception)
