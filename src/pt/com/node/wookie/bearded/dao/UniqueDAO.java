@@ -28,12 +28,10 @@ public abstract class UniqueDAO<K extends Key, E extends AbstractEntity> extends
         //ERRO
     }
 
-    public void createInstace(K key)
+    public void createInstace(K key, E entity)
     {
         if (!isInstanciated(key))
-        {
-            instances.put(key, (E) this.getByKey(key));
-        }
+            instances.put(key, entity);
     }
 
 }

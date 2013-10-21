@@ -1,28 +1,30 @@
 package pt.com.node.wookie.bearded.entities;
 
+import pt.com.node.wookie.bearded.core.DataSourceManager;
+import pt.com.node.wookie.bearded.core.keys.IntegerKey;
+
 /**
  * User: Henrique in Bearded-Wookie
  * Date: 15-10-2013
  * Time: 19:16
  */
-public class User extends AbstractEntity
+public class User extends AbstractEntity<IntegerKey>
 {
     private String username, name, email, password;
     private String token;
-    private Group group;
+    private UserGroup group;
 
     public User()
     {
 
     }
 
-    public User(int id_user, String username, String email, String password, String name)
+    public User(String username, String email, String password, String name)
     {
-        this.id = id_user;
         this.username = username;
         this.email = email;
         this.name = name;
-        this.password = password;
+        setPassword(password);
     }
 
     public String getUsername()
@@ -37,7 +39,7 @@ public class User extends AbstractEntity
 
     public void setIdUser(int id_user)
     {
-        this.id = id_user;
+        this.key = new IntegerKey(id_user);
     }
 
     public String getName()
@@ -67,7 +69,7 @@ public class User extends AbstractEntity
 
     public void setPassword(String password)
     {
-        this.password = password;
+        this.password = DataSourceManager.getMD5HashWithSalt(password);
     }
 
     public String getToken()
@@ -80,12 +82,12 @@ public class User extends AbstractEntity
         this.token = token;
     }
 
-    public Group getGroup()
+    public UserGroup getGroup()
     {
         return group;
     }
 
-    public void setGroup(Group group)
+    public void setGroup(UserGroup group)
     {
         this.group = group;
     }
@@ -94,7 +96,8 @@ public class User extends AbstractEntity
     public String toString()
     {
         return "User{" +
-                "username='" + username + '\'' +
+                "key='" + key + "\'" +
+                ",username='" + username + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +

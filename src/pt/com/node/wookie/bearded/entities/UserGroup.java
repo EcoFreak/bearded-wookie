@@ -1,15 +1,17 @@
 package pt.com.node.wookie.bearded.entities;
 
+import pt.com.node.wookie.bearded.core.keys.IntegerKey;
+
 /**
  * User: Henrique in Bearded-Wookie
  * Date: 18-10-2013
  * Time: 15:41
  */
-public class Group extends AbstractEntity
+public class UserGroup extends AbstractEntity<IntegerKey>
 {
     private String name;
 
-    public Group()
+    public UserGroup()
     {
 
     }
@@ -26,13 +28,14 @@ public class Group extends AbstractEntity
 
     public void setIdGroup(int idGroup)
     {
-        this.id = idGroup;
+        this.key = new IntegerKey(idGroup);
     }
 
     @Override
     public String toString()
     {
         return "Group{" +
+                hashCode() +
                 "name='" + name + '\'' +
                 '}';
     }

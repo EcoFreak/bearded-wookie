@@ -9,9 +9,10 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  */
 public class DataSourceManager
 {
-    private static DataSourceManager instance = null;
     public static String salt = "€@2312w00k1e";
+    private static DataSourceManager instance = null;
     private DriverManagerDataSource dataSource;
+
     private DataSourceManager()
     {
         dataSource = new DriverManagerDataSource();
@@ -28,8 +29,14 @@ public class DataSourceManager
         return instance;
     }
 
+    public static String getMD5HashWithSalt(String password)
+    {
+        return org.springframework.util.DigestUtils.md5DigestAsHex((password + DataSourceManager.salt).getBytes());
+    }
+
     public DriverManagerDataSource getDataSource()
     {
         return dataSource;
     }
+
 }

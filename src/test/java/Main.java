@@ -4,8 +4,10 @@
  * Time: 22:56
  */
 
+import pt.com.node.wookie.bearded.core.keys.IntegerKey;
 import pt.com.node.wookie.bearded.dao.DAOFactory;
 import pt.com.node.wookie.bearded.dao.UserDAO;
+import pt.com.node.wookie.bearded.dao.UserGroupDAO;
 import pt.com.node.wookie.bearded.entities.User;
 
 public class Main
@@ -18,7 +20,10 @@ public class Main
 
         // Inject the datasource into the dao
         //dao.setDataSource(dataSource);
-
+        User created = dao.create(new User("knoker", "edurado@node.com.pt", "", "Eduardo Olivia"));
+        System.out.println(created);
+        if (created != null)
+            System.out.println(dao.remove(created));
         //dao.create("TestUser","henrique@ferreiratech.com.pt","teste","Henrique","Is it really?","Yes");
         //System.out.println("Now select and list all persons");
         String pass = "698dc19d489c4e4db73e28a713eab07b";
@@ -27,6 +32,8 @@ public class Main
 
         System.out.println(u);
         System.out.println(dao.getUserByToken(u.getToken()));
+        System.out.println(DAOFactory.getDAO(UserGroupDAO.class).selectAll());
+        System.out.println(DAOFactory.getDAO(UserGroupDAO.class).getByKey(new IntegerKey(1)));
         /*List<User> list = dao.selectAll();
         for (User myUser : list)
         {

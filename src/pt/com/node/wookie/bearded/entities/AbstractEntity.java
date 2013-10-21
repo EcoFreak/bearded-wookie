@@ -1,17 +1,21 @@
 package pt.com.node.wookie.bearded.entities;
 
+import pt.com.node.wookie.bearded.core.keys.Key;
+
+import java.io.Serializable;
+
 /**
  * User: Henrique in Bearded-Wookie
  * Date: 15-10-2013
  * Time: 18:15
  */
-public class AbstractEntity
+public class AbstractEntity<K extends Key> implements Serializable
 {
-    protected int id;
+    protected K key;
 
-    public int getId()
+    public K getKey()
     {
-        return this.id;
+        return this.key;
     }
 
     @Override
@@ -29,6 +33,6 @@ public class AbstractEntity
 
         AbstractEntity that = (AbstractEntity) obj;
 
-        return this.id == that.getId();
+        return this.key.equals(that.getKey());
     }
 }
